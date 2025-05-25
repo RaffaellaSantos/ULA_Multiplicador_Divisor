@@ -1,0 +1,185 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "produto[0]",
+					"strict" : false
+				},
+				{
+					"name" : "produto[1]",
+					"strict" : false
+				},
+				{
+					"name" : "produto[2]",
+					"strict" : false
+				},
+				{
+					"name" : "produto[3]",
+					"strict" : false
+				},
+				{
+					"name" : "produto[4]",
+					"strict" : false
+				},
+				{
+					"name" : "produto[5]",
+					"strict" : false
+				},
+				{
+					"name" : "produto[6]",
+					"strict" : false
+				},
+				{
+					"name" : "produto[7]",
+					"strict" : false
+				},
+				{
+					"name" : "produto[8]",
+					"strict" : false
+				},
+				{
+					"name" : "produto[9]",
+					"strict" : false
+				},
+				{
+					"name" : "produto[10]",
+					"strict" : false
+				},
+				{
+					"name" : "produto[11]",
+					"strict" : false
+				},
+				{
+					"name" : "produto[12]",
+					"strict" : false
+				},
+				{
+					"name" : "produto[13]",
+					"strict" : false
+				},
+				{
+					"name" : "produto[14]",
+					"strict" : false
+				},
+				{
+					"name" : "produto[15]",
+					"strict" : false
+				},
+				{
+					"name" : "fim",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "rst",
+					"strict" : false
+				},
+				{
+					"name" : "inicio",
+					"strict" : false
+				},
+				{
+					"name" : "multiplicador[0]",
+					"strict" : false
+				},
+				{
+					"name" : "multiplicando[0]",
+					"strict" : false
+				},
+				{
+					"name" : "multiplicador[1]",
+					"strict" : false
+				},
+				{
+					"name" : "multiplicando[1]",
+					"strict" : false
+				},
+				{
+					"name" : "multiplicando[2]",
+					"strict" : false
+				},
+				{
+					"name" : "multiplicando[3]",
+					"strict" : false
+				},
+				{
+					"name" : "multiplicando[4]",
+					"strict" : false
+				},
+				{
+					"name" : "multiplicando[5]",
+					"strict" : false
+				},
+				{
+					"name" : "multiplicando[6]",
+					"strict" : false
+				},
+				{
+					"name" : "multiplicando[7]",
+					"strict" : false
+				},
+				{
+					"name" : "multiplicando[8]",
+					"strict" : false
+				},
+				{
+					"name" : "multiplicando[9]",
+					"strict" : false
+				},
+				{
+					"name" : "multiplicando[10]",
+					"strict" : false
+				},
+				{
+					"name" : "multiplicando[11]",
+					"strict" : false
+				},
+				{
+					"name" : "multiplicando[12]",
+					"strict" : false
+				},
+				{
+					"name" : "multiplicando[13]",
+					"strict" : false
+				},
+				{
+					"name" : "multiplicando[14]",
+					"strict" : false
+				},
+				{
+					"name" : "multiplicando[15]",
+					"strict" : false
+				},
+				{
+					"name" : "multiplicador[2]",
+					"strict" : false
+				},
+				{
+					"name" : "multiplicador[3]",
+					"strict" : false
+				},
+				{
+					"name" : "multiplicador[4]",
+					"strict" : false
+				},
+				{
+					"name" : "multiplicador[5]",
+					"strict" : false
+				},
+				{
+					"name" : "multiplicador[6]",
+					"strict" : false
+				},
+				{
+					"name" : "multiplicador[7]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

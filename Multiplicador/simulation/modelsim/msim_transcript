@@ -1,0 +1,57 @@
+# do multi_8b_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying /home/raffaellasf/intelFPGA_lite/20.1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+/home/raffaellasf/Documentos/Quartus/Multiplicador {/home/raffaellasf/Documentos/Quartus/Multiplicador/multi_8b.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:33:07 on May 24,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/raffaellasf/Documentos/Quartus/Multiplicador" /home/raffaellasf/Documentos/Quartus/Multiplicador/multi_8b.v 
+# -- Compiling module multi_8b
+# 
+# Top level modules:
+# 	multi_8b
+# End time: 15:33:07 on May 24,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+/home/raffaellasf/Documentos/Quartus/Multiplicador {/home/raffaellasf/Documentos/Quartus/Multiplicador/tb_multi_8b.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:33:07 on May 24,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/raffaellasf/Documentos/Quartus/Multiplicador" /home/raffaellasf/Documentos/Quartus/Multiplicador/tb_multi_8b.v 
+# -- Compiling module tb_multi_8b
+# 
+# Top level modules:
+# 	tb_multi_8b
+# End time: 15:33:07 on May 24,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb_multi_8b
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" tb_multi_8b 
+# Start time: 15:33:07 on May 24,2025
+# Loading work.tb_multi_8b
+# Loading work.multi_8b
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Teste 1: 25 x 12 =   300
+# Sucesso!
+# Teste 2: 10 x 12 =   120
+# Sucesso!
+# ** Note: $finish    : /home/raffaellasf/Documentos/Quartus/Multiplicador/tb_multi_8b.v(68)
+#    Time: 225 ps  Iteration: 0  Instance: /tb_multi_8b
+# 1
+# Break in Module tb_multi_8b at /home/raffaellasf/Documentos/Quartus/Multiplicador/tb_multi_8b.v line 68
+# 
+# stdin: <EOF>
+# End time: 15:38:17 on May 24,2025, Elapsed time: 0:05:10
+# Errors: 0, Warnings: 0
