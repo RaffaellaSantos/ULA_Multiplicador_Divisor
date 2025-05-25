@@ -1,0 +1,10 @@
+module ULA_8b(
+	input [7:0] A, B,
+	input x, y,
+	output [3:0] flag,
+	output [7:0] saida
+);
+	
+	
+
+endmodule

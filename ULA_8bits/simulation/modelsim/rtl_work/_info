@@ -1,0 +1,85 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/raffaellasf/Documentos/Quartus/ULA_8bits/simulation/modelsim
+vmux_4x1
+Z1 !s110 1748210904
+!i10b 1
+!s100 [fYaz6`n_c1ez=LHENf8`0
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Im9dcYedKbkgEa1H[S]IIW0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1748204651
+8/home/raffaellasf/Documentos/Quartus/ULA_8bits/mux_4x1.v
+F/home/raffaellasf/Documentos/Quartus/ULA_8bits/mux_4x1.v
+!i122 1
+L0 1 15
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1748210904.000000
+!s107 /home/raffaellasf/Documentos/Quartus/ULA_8bits/mux_4x1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/raffaellasf/Documentos/Quartus/ULA_8bits|/home/raffaellasf/Documentos/Quartus/ULA_8bits/mux_4x1.v|
+!i113 1
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work +incdir+/home/raffaellasf/Documentos/Quartus/ULA_8bits
+Z8 tCvgOpt 0
+vtb_ULA_8b
+R1
+!i10b 1
+!s100 oQ9Y>n7^Lj;A02ZVZKi_`2
+R2
+I`:KV;Vn9PLL^4hBzZ4M9E0
+R3
+R0
+w1748210872
+8/home/raffaellasf/Documentos/Quartus/ULA_8bits/tb_ULA_8b.v
+F/home/raffaellasf/Documentos/Quartus/ULA_8bits/tb_ULA_8b.v
+!i122 2
+L0 3 97
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/raffaellasf/Documentos/Quartus/ULA_8bits/tb_ULA_8b.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/raffaellasf/Documentos/Quartus/ULA_8bits|/home/raffaellasf/Documentos/Quartus/ULA_8bits/tb_ULA_8b.v|
+!i113 1
+R6
+R7
+R8
+ntb_@u@l@a_8b
+vULA_8b
+R1
+!i10b 1
+!s100 PEQezVQE3gX81P<I:iHPK3
+R2
+ILT:d4G_4z=DeiD7BLmmb:1
+R3
+R0
+w1748206545
+8/home/raffaellasf/Documentos/Quartus/ULA_8bits/ULA_8b.v
+F/home/raffaellasf/Documentos/Quartus/ULA_8bits/ULA_8b.v
+!i122 0
+L0 1 33
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/raffaellasf/Documentos/Quartus/ULA_8bits/ULA_8b.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/raffaellasf/Documentos/Quartus/ULA_8bits|/home/raffaellasf/Documentos/Quartus/ULA_8bits/ULA_8b.v|
+!i113 1
+R6
+R7
+R8
+n@u@l@a_8b

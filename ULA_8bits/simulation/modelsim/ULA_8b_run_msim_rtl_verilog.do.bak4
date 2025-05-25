@@ -1,0 +1,10 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+/home/raffaellasf/Documentos/Quartus/ULA_8bits {/home/raffaellasf/Documentos/Quartus/ULA_8bits/ULA_8b.v}
+vlog -vlog01compat -work work +incdir+/home/raffaellasf/Documentos/Quartus/ULA_8bits {/home/raffaellasf/Documentos/Quartus/ULA_8bits/mux_4x1.v}
+
