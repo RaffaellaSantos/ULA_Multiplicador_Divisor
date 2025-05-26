@@ -158,23 +158,23 @@ multiplicador[4] => A.DATAB
 multiplicador[5] => A.DATAB
 multiplicador[6] => A.DATAB
 multiplicador[7] => A.DATAB
-produto[0] <= produto[0].DB_MAX_OUTPUT_PORT_TYPE
-produto[1] <= produto[1].DB_MAX_OUTPUT_PORT_TYPE
-produto[2] <= produto[2].DB_MAX_OUTPUT_PORT_TYPE
-produto[3] <= produto[3].DB_MAX_OUTPUT_PORT_TYPE
-produto[4] <= produto[4].DB_MAX_OUTPUT_PORT_TYPE
-produto[5] <= produto[5].DB_MAX_OUTPUT_PORT_TYPE
-produto[6] <= produto[6].DB_MAX_OUTPUT_PORT_TYPE
-produto[7] <= produto[7].DB_MAX_OUTPUT_PORT_TYPE
-produto[8] <= produto[8].DB_MAX_OUTPUT_PORT_TYPE
-produto[9] <= produto[9].DB_MAX_OUTPUT_PORT_TYPE
-produto[10] <= produto[10].DB_MAX_OUTPUT_PORT_TYPE
-produto[11] <= produto[11].DB_MAX_OUTPUT_PORT_TYPE
-produto[12] <= produto[12].DB_MAX_OUTPUT_PORT_TYPE
-produto[13] <= produto[13].DB_MAX_OUTPUT_PORT_TYPE
-produto[14] <= produto[14].DB_MAX_OUTPUT_PORT_TYPE
-produto[15] <= produto[15].DB_MAX_OUTPUT_PORT_TYPE
-fim <= fim~reg0.DB_MAX_OUTPUT_PORT_TYPE
+produto[0] << produto[0].DB_MAX_OUTPUT_PORT_TYPE
+produto[1] << produto[1].DB_MAX_OUTPUT_PORT_TYPE
+produto[2] << produto[2].DB_MAX_OUTPUT_PORT_TYPE
+produto[3] << produto[3].DB_MAX_OUTPUT_PORT_TYPE
+produto[4] << produto[4].DB_MAX_OUTPUT_PORT_TYPE
+produto[5] << produto[5].DB_MAX_OUTPUT_PORT_TYPE
+produto[6] << produto[6].DB_MAX_OUTPUT_PORT_TYPE
+produto[7] << produto[7].DB_MAX_OUTPUT_PORT_TYPE
+produto[8] << produto[8].DB_MAX_OUTPUT_PORT_TYPE
+produto[9] << produto[9].DB_MAX_OUTPUT_PORT_TYPE
+produto[10] << produto[10].DB_MAX_OUTPUT_PORT_TYPE
+produto[11] << produto[11].DB_MAX_OUTPUT_PORT_TYPE
+produto[12] << produto[12].DB_MAX_OUTPUT_PORT_TYPE
+produto[13] << produto[13].DB_MAX_OUTPUT_PORT_TYPE
+produto[14] << produto[14].DB_MAX_OUTPUT_PORT_TYPE
+produto[15] << produto[15].DB_MAX_OUTPUT_PORT_TYPE
+fim << fim~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |multi_8b|mux8x1_16b:mux_soma

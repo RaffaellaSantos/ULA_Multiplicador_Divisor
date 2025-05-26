@@ -66,6 +66,26 @@ module tb_multi_8b;
     end else begin
       $display("Erro: timeout no Teste 2");
     end
+	 
+	 // Reset
+    rst = 1; @(negedge clk); rst = 0;
+
+    // === Teste 3 ===
+    multiplicando = 16'd2;
+    multiplicador = 8'd3;
+    @(negedge clk); inicio = 1;
+    @(negedge clk); inicio = 0;
+
+    repeat (100) @(posedge clk);
+    if (fim) begin
+      $display("Teste 2: 2 x 3 = %d", produto);
+      if (produto !== 16'd6)
+        $display("Erro: Esperado 6");
+      else
+        $display("Sucesso!");
+    end else begin
+      $display("Erro: timeout no Teste 3");
+    end
 
     #20;
     $finish;

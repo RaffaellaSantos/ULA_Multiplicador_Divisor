@@ -1,5 +1,5 @@
 Fitter report for multi_8b
-Mon May 26 14:10:15 2025
+Mon May 26 14:24:12 2025
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -63,7 +63,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Fitter Summary                                                                ;
 +---------------------------------+---------------------------------------------+
-; Fitter Status                   ; Successful - Mon May 26 14:10:15 2025       ;
+; Fitter Status                   ; Successful - Mon May 26 14:24:12 2025       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; multi_8b                                    ;
 ; Top-level Entity Name           ; multi_8b                                    ;
@@ -153,7 +153,7 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 24          ;
 ; Maximum allowed            ; 16          ;
 ;                            ;             ;
-; Average used               ; 1.02        ;
+; Average used               ; 1.03        ;
 ; Maximum used               ; 16          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
@@ -163,7 +163,8 @@ https://fpgasoftware.intel.com/eula.
 ;     Processor 4            ;   0.2%      ;
 ;     Processor 5            ;   0.2%      ;
 ;     Processor 6            ;   0.2%      ;
-;     Processors 7-16        ;   0.1%      ;
+;     Processor 7            ;   0.1%      ;
+;     Processors 8-16        ;   0.1%      ;
 +----------------------------+-------------+
 
 
@@ -1548,13 +1549,13 @@ Info (334004): Delay annotation completed successfully
 Warning (292000): FLEXlm software error: Bad version number - must be floating point number, with no letters. Feature:       quartus_noexist Version text:  Licensed License path:  /home/raffaellasf/intelFPGA_lite/20.1/licenses/license.txt: FlexNet Licensing error:-77,4.
 Warning (292000): FLEXlm software error: Bad version number - must be floating point number, with no letters. Feature:       quartus_seu_mitigation Version text:  Licensed License path:  /home/raffaellasf/intelFPGA_lite/20.1/licenses/license.txt: FlexNet Licensing error:-77,4.
 Warning (292000): FLEXlm software error: Bad version number - must be floating point number, with no letters. Feature:       quartus_seu_mitigation Version text:  Licensed License path:  /home/raffaellasf/intelFPGA_lite/20.1/licenses/license.txt: FlexNet Licensing error:-77,4.
-Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:02
+Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:01
 Info (144001): Generated suppressed messages file /home/raffaellasf/Documentos/Git/ULA_Multiplicador_Divisor/ULA_Multiplicador_Divisor/Multiplicador/output_files/multi_8b.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 20 warnings
-    Info: Peak virtual memory: 2883 megabytes
-    Info: Processing ended: Mon May 26 14:10:15 2025
+    Info: Peak virtual memory: 2870 megabytes
+    Info: Processing ended: Mon May 26 14:24:12 2025
     Info: Elapsed time: 00:00:14
-    Info: Total CPU time (on all processors): 00:00:45
+    Info: Total CPU time (on all processors): 00:00:44
 
 
 +----------------------------+
