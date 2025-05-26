@@ -1,5 +1,5 @@
 Fitter report for multi_8b
-Sat May 24 14:51:38 2025
+Mon May 26 14:10:15 2025
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -36,6 +36,7 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
  28. Estimated Delay Added for Hold Timing Summary
  29. Estimated Delay Added for Hold Timing Details
  30. Fitter Messages
+ 31. Fitter Suppressed Messages
 
 
 
@@ -62,7 +63,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Fitter Summary                                                                ;
 +---------------------------------+---------------------------------------------+
-; Fitter Status                   ; Successful - Sat May 24 14:51:38 2025       ;
+; Fitter Status                   ; Successful - Mon May 26 14:10:15 2025       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; multi_8b                                    ;
 ; Top-level Entity Name           ; multi_8b                                    ;
@@ -91,6 +92,8 @@ https://fpgasoftware.intel.com/eula.
 ; Option                                                             ; Setting                               ; Default Value                         ;
 +--------------------------------------------------------------------+---------------------------------------+---------------------------------------+
 ; Device                                                             ; 5CGXFC7C7F23C8                        ;                                       ;
+; Minimum Core Junction Temperature                                  ; 0                                     ;                                       ;
+; Maximum Core Junction Temperature                                  ; 85                                    ;                                       ;
 ; Use smart compilation                                              ; Off                                   ; Off                                   ;
 ; Enable parallel Assembler and Timing Analyzer during compilation   ; On                                    ; On                                    ;
 ; Enable compact report table                                        ; Off                                   ; Off                                   ;
@@ -159,7 +162,8 @@ https://fpgasoftware.intel.com/eula.
 ;     Processor 3            ;   0.2%      ;
 ;     Processor 4            ;   0.2%      ;
 ;     Processor 5            ;   0.2%      ;
-;     Processors 6-16        ;   0.1%      ;
+;     Processor 6            ;   0.2%      ;
+;     Processors 7-16        ;   0.1%      ;
 +----------------------------+-------------+
 
 
@@ -210,7 +214,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in /home/raffaellasf/Documentos/Quartus/Multiplicador/output_files/multi_8b.pin.
+The pin-out file can be found in /home/raffaellasf/Documentos/Git/ULA_Multiplicador_Divisor/ULA_Multiplicador_Divisor/Multiplicador/output_files/multi_8b.pin.
 
 
 +------------------------------------------------------------------------------------------+
@@ -221,9 +225,9 @@ The pin-out file can be found in /home/raffaellasf/Documentos/Quartus/Multiplica
 ; Logic utilization (ALMs needed / total ALMs on device)      ; 26 / 56,480        ; < 1 % ;
 ; ALMs needed [=A-B+C]                                        ; 26                 ;       ;
 ;     [A] ALMs used in final placement [=a+b+c+d]             ; 27 / 56,480        ; < 1 % ;
-;         [a] ALMs used for LUT logic and registers           ; 12                 ;       ;
+;         [a] ALMs used for LUT logic and registers           ; 11                 ;       ;
 ;         [b] ALMs used for LUT logic                         ; 4                  ;       ;
-;         [c] ALMs used for registers                         ; 11                 ;       ;
+;         [c] ALMs used for registers                         ; 12                 ;       ;
 ;         [d] ALMs used for memory (up to half of total ALMs) ; 0                  ;       ;
 ;     [B] Estimate of ALMs recoverable by dense packing       ; 1 / 56,480         ; < 1 % ;
 ;     [C] Estimate of ALMs unavailable [=a+b+c+d]             ; 0 / 56,480         ; 0 %   ;
@@ -234,8 +238,8 @@ The pin-out file can be found in /home/raffaellasf/Documentos/Quartus/Multiplica
 ;                                                             ;                    ;       ;
 ; Difficulty packing design                                   ; Low                ;       ;
 ;                                                             ;                    ;       ;
-; Total LABs:  partially or completely used                   ; 5 / 5,648          ; < 1 % ;
-;     -- Logic LABs                                           ; 5                  ;       ;
+; Total LABs:  partially or completely used                   ; 6 / 5,648          ; < 1 % ;
+;     -- Logic LABs                                           ; 6                  ;       ;
 ;     -- Memory LABs (up to half of total LABs)               ; 0                  ;       ;
 ;                                                             ;                    ;       ;
 ; Combinational ALUT usage for logic                          ; 26                 ;       ;
@@ -287,7 +291,7 @@ The pin-out file can be found in /home/raffaellasf/Documentos/Quartus/Multiplica
 ; Impedance control blocks                                    ; 0 / 3              ; 0 %   ;
 ; Hard Memory Controllers                                     ; 0 / 2              ; 0 %   ;
 ; Average interconnect usage (total/H/V)                      ; 0.0% / 0.0% / 0.0% ;       ;
-; Peak interconnect usage (total/H/V)                         ; 0.7% / 0.8% / 0.6% ;       ;
+; Peak interconnect usage (total/H/V)                         ; 0.9% / 0.9% / 0.7% ;       ;
 ; Maximum fan-out                                             ; 47                 ;       ;
 ; Highest non-global fan-out                                  ; 47                 ;       ;
 ; Total fan-out                                               ; 407                ;       ;
@@ -303,9 +307,9 @@ The pin-out file can be found in /home/raffaellasf/Documentos/Quartus/Multiplica
 ; Logic utilization (ALMs needed / total ALMs on device)      ; 26 / 56480 ( < 1 % )  ; 0 / 56480 ( 0 % )              ;
 ; ALMs needed [=A-B+C]                                        ; 26                    ; 0                              ;
 ;     [A] ALMs used in final placement [=a+b+c+d]             ; 27 / 56480 ( < 1 % )  ; 0 / 56480 ( 0 % )              ;
-;         [a] ALMs used for LUT logic and registers           ; 12                    ; 0                              ;
+;         [a] ALMs used for LUT logic and registers           ; 11                    ; 0                              ;
 ;         [b] ALMs used for LUT logic                         ; 4                     ; 0                              ;
-;         [c] ALMs used for registers                         ; 11                    ; 0                              ;
+;         [c] ALMs used for registers                         ; 12                    ; 0                              ;
 ;         [d] ALMs used for memory (up to half of total ALMs) ; 0                     ; 0                              ;
 ;     [B] Estimate of ALMs recoverable by dense packing       ; 1 / 56480 ( < 1 % )   ; 0 / 56480 ( 0 % )              ;
 ;     [C] Estimate of ALMs unavailable [=a+b+c+d]             ; 0 / 56480 ( 0 % )     ; 0 / 56480 ( 0 % )              ;
@@ -316,8 +320,8 @@ The pin-out file can be found in /home/raffaellasf/Documentos/Quartus/Multiplica
 ;                                                             ;                       ;                                ;
 ; Difficulty packing design                                   ; Low                   ; Low                            ;
 ;                                                             ;                       ;                                ;
-; Total LABs:  partially or completely used                   ; 5 / 5648 ( < 1 % )    ; 0 / 5648 ( 0 % )               ;
-;     -- Logic LABs                                           ; 5                     ; 0                              ;
+; Total LABs:  partially or completely used                   ; 6 / 5648 ( < 1 % )    ; 0 / 5648 ( 0 % )               ;
+;     -- Logic LABs                                           ; 6                     ; 0                              ;
 ;     -- Memory LABs (up to half of total LABs)               ; 0                     ; 0                              ;
 ;                                                             ;                       ;                                ;
 ; Combinational ALUT usage for logic                          ; 26                    ; 0                              ;
@@ -388,32 +392,32 @@ The pin-out file can be found in /home/raffaellasf/Documentos/Quartus/Multiplica
 ; Name              ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination ; Termination Control Block ; Location assigned by ; Slew Rate ;
 +-------------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
 ; clk               ; M16   ; 5B       ; 89           ; 35           ; 60           ; 45                    ; 0                  ; yes    ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; inicio            ; U15   ; 4A       ; 60           ; 0            ; 0            ; 47                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; multiplicador[0]  ; Y14   ; 4A       ; 54           ; 0            ; 17           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; multiplicador[1]  ; AA15  ; 4A       ; 54           ; 0            ; 34           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; multiplicador[2]  ; T12   ; 4A       ; 52           ; 0            ; 17           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; multiplicador[3]  ; AA14  ; 4A       ; 52           ; 0            ; 51           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; multiplicador[4]  ; AB15  ; 4A       ; 54           ; 0            ; 51           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; multiplicador[5]  ; Y15   ; 4A       ; 54           ; 0            ; 0            ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; multiplicador[6]  ; T13   ; 4A       ; 52           ; 0            ; 0            ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; multiplicador[7]  ; AA13  ; 4A       ; 52           ; 0            ; 34           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; multiplicando[0]  ; AA17  ; 4A       ; 60           ; 0            ; 51           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; multiplicando[10] ; P14   ; 4A       ; 68           ; 0            ; 17           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; multiplicando[11] ; W16   ; 4A       ; 64           ; 0            ; 0            ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; multiplicando[12] ; V21   ; 4A       ; 70           ; 0            ; 34           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; multiplicando[13] ; Y21   ; 4A       ; 68           ; 0            ; 51           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; multiplicando[14] ; W21   ; 4A       ; 68           ; 0            ; 34           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; multiplicando[15] ; W19   ; 4A       ; 62           ; 0            ; 0            ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; multiplicando[1]  ; U22   ; 4A       ; 70           ; 0            ; 51           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; multiplicando[2]  ; V19   ; 4A       ; 70           ; 0            ; 17           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; multiplicando[3]  ; V16   ; 4A       ; 64           ; 0            ; 17           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; multiplicando[4]  ; R14   ; 4A       ; 68           ; 0            ; 0            ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; multiplicando[5]  ; AB22  ; 4A       ; 64           ; 0            ; 51           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; multiplicando[6]  ; AA20  ; 4A       ; 62           ; 0            ; 34           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; multiplicando[7]  ; V20   ; 4A       ; 62           ; 0            ; 17           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; multiplicando[8]  ; AA19  ; 4A       ; 62           ; 0            ; 51           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; multiplicando[9]  ; V18   ; 4A       ; 70           ; 0            ; 0            ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
-; rst               ; T14   ; 4A       ; 60           ; 0            ; 17           ; 45                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; inicio            ; AB20  ; 4A       ; 58           ; 0            ; 91           ; 47                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; multiplicador[0]  ; W19   ; 4A       ; 62           ; 0            ; 0            ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; multiplicador[1]  ; Y19   ; 4A       ; 66           ; 0            ; 40           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; multiplicador[2]  ; W21   ; 4A       ; 68           ; 0            ; 34           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; multiplicador[3]  ; V16   ; 4A       ; 64           ; 0            ; 17           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; multiplicador[4]  ; V20   ; 4A       ; 62           ; 0            ; 17           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; multiplicador[5]  ; Y20   ; 4A       ; 66           ; 0            ; 57           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; multiplicador[6]  ; AA20  ; 4A       ; 62           ; 0            ; 34           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; multiplicador[7]  ; R14   ; 4A       ; 68           ; 0            ; 0            ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; multiplicando[0]  ; AA13  ; 4A       ; 52           ; 0            ; 34           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; multiplicando[10] ; W22   ; 4A       ; 66           ; 0            ; 74           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; multiplicando[11] ; P14   ; 4A       ; 68           ; 0            ; 17           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; multiplicando[12] ; Y21   ; 4A       ; 68           ; 0            ; 51           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; multiplicando[13] ; AB15  ; 4A       ; 54           ; 0            ; 51           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; multiplicando[14] ; AA15  ; 4A       ; 54           ; 0            ; 34           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; multiplicando[15] ; Y15   ; 4A       ; 54           ; 0            ; 0            ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; multiplicando[1]  ; AB22  ; 4A       ; 64           ; 0            ; 51           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; multiplicando[2]  ; W16   ; 4A       ; 64           ; 0            ; 0            ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; multiplicando[3]  ; U22   ; 4A       ; 70           ; 0            ; 51           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; multiplicando[4]  ; V21   ; 4A       ; 70           ; 0            ; 34           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; multiplicando[5]  ; V19   ; 4A       ; 70           ; 0            ; 17           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; multiplicando[6]  ; V18   ; 4A       ; 70           ; 0            ; 0            ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; multiplicando[7]  ; AA19  ; 4A       ; 62           ; 0            ; 51           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; multiplicando[8]  ; AA22  ; 4A       ; 64           ; 0            ; 34           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; multiplicando[9]  ; U16   ; 4A       ; 72           ; 0            ; 17           ; 1                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
+; rst               ; AB21  ; 4A       ; 58           ; 0            ; 74           ; 45                    ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; Fitter               ; no        ;
 +-------------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
 
 
@@ -422,23 +426,23 @@ The pin-out file can be found in /home/raffaellasf/Documentos/Quartus/Multiplica
 +-------------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+---------------------+-----------------------------+----------------------+----------------------+---------------------+
 ; Name        ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Output Register ; Output Enable Register ; Slew Rate ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Termination                       ; Termination Control Block ; Output Buffer Pre-emphasis ; Voltage Output Differential ; Output Buffer Delay ; Output Buffer Delay Control ; Location assigned by ; Output Enable Source ; Output Enable Group ;
 +-------------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+---------------------+-----------------------------+----------------------+----------------------+---------------------+
-; fim         ; AA22  ; 4A       ; 64           ; 0            ; 34           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; produto[0]  ; V13   ; 4A       ; 50           ; 0            ; 57           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; produto[10] ; AB20  ; 4A       ; 58           ; 0            ; 91           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; produto[11] ; AB17  ; 4A       ; 56           ; 0            ; 51           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; produto[12] ; Y20   ; 4A       ; 66           ; 0            ; 57           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; produto[13] ; Y19   ; 4A       ; 66           ; 0            ; 40           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; produto[14] ; V14   ; 4A       ; 56           ; 0            ; 17           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; produto[15] ; AB13  ; 4A       ; 50           ; 0            ; 91           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; produto[1]  ; AB21  ; 4A       ; 58           ; 0            ; 74           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; produto[2]  ; W22   ; 4A       ; 66           ; 0            ; 74           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; produto[3]  ; Y17   ; 4A       ; 58           ; 0            ; 40           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; produto[4]  ; AA18  ; 4A       ; 60           ; 0            ; 34           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; produto[5]  ; Y16   ; 4A       ; 58           ; 0            ; 57           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; produto[6]  ; AB18  ; 4A       ; 56           ; 0            ; 34           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; fim         ; AA14  ; 4A       ; 52           ; 0            ; 51           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; produto[0]  ; V15   ; 4A       ; 56           ; 0            ; 0            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; produto[10] ; AB17  ; 4A       ; 56           ; 0            ; 51           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; produto[11] ; T13   ; 4A       ; 52           ; 0            ; 0            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; produto[12] ; Y17   ; 4A       ; 58           ; 0            ; 40           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; produto[13] ; AA17  ; 4A       ; 60           ; 0            ; 51           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; produto[14] ; AB18  ; 4A       ; 56           ; 0            ; 34           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; produto[15] ; AA18  ; 4A       ; 60           ; 0            ; 34           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; produto[1]  ; V13   ; 4A       ; 50           ; 0            ; 57           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; produto[2]  ; V14   ; 4A       ; 56           ; 0            ; 17           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; produto[3]  ; T14   ; 4A       ; 60           ; 0            ; 17           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; produto[4]  ; Y16   ; 4A       ; 58           ; 0            ; 57           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; produto[5]  ; Y22   ; 4A       ; 66           ; 0            ; 91           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; produto[6]  ; T12   ; 4A       ; 52           ; 0            ; 17           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
 ; produto[7]  ; AB12  ; 4A       ; 50           ; 0            ; 74           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; produto[8]  ; Y22   ; 4A       ; 66           ; 0            ; 91           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
-; produto[9]  ; V15   ; 4A       ; 56           ; 0            ; 0            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; produto[8]  ; U15   ; 4A       ; 60           ; 0            ; 0            ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
+; produto[9]  ; Y14   ; 4A       ; 54           ; 0            ; 17           ; no              ; no                     ; 1         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; 0                   ; Off                         ; Fitter               ; -                    ; -                   ;
 +-------------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+---------------------+-----------------------------+----------------------+----------------------+---------------------+
 
 
@@ -499,16 +503,16 @@ The pin-out file can be found in /home/raffaellasf/Documentos/Quartus/Multiplica
 ; AA10     ; 113        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AA11     ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; AA12     ; 131        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; AA13     ; 139        ; 4A       ; multiplicador[7]                ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; AA14     ; 137        ; 4A       ; multiplicador[3]                ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; AA15     ; 142        ; 4A       ; multiplicador[1]                ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; AA13     ; 139        ; 4A       ; multiplicando[0]                ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; AA14     ; 137        ; 4A       ; fim                             ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; AA15     ; 142        ; 4A       ; multiplicando[14]               ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; AA16     ;            ; 4A       ; VCCIO4A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
-; AA17     ; 153        ; 4A       ; multiplicando[0]                ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; AA18     ; 155        ; 4A       ; produto[4]                      ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; AA19     ; 156        ; 4A       ; multiplicando[8]                ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; AA20     ; 158        ; 4A       ; multiplicando[6]                ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; AA17     ; 153        ; 4A       ; produto[13]                     ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; AA18     ; 155        ; 4A       ; produto[15]                     ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; AA19     ; 156        ; 4A       ; multiplicando[7]                ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; AA20     ; 158        ; 4A       ; multiplicador[6]                ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; AA21     ;            ; 4A       ; VCCIO4A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
-; AA22     ; 163        ; 4A       ; fim                             ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; AA22     ; 163        ; 4A       ; multiplicando[8]                ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; AB1      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; AB2      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; AB3      ; 49         ; 3A       ; ^AS_DATA1, DATA1                ;        ;              ;                     ; Weak Pull Up ;                 ; --       ; On           ;
@@ -521,16 +525,16 @@ The pin-out file can be found in /home/raffaellasf/Documentos/Quartus/Multiplica
 ; AB10     ; 124        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AB11     ; 126        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AB12     ; 134        ; 4A       ; produto[7]                      ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; AB13     ; 132        ; 4A       ; produto[15]                     ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; AB13     ; 132        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AB14     ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
-; AB15     ; 140        ; 4A       ; multiplicador[4]                ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; AB15     ; 140        ; 4A       ; multiplicando[13]               ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; AB16     ;            ; 4A       ; VREFB4AN0                       ; power  ;              ;                     ; --           ;                 ; --       ; --           ;
-; AB17     ; 145        ; 4A       ; produto[11]                     ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; AB18     ; 147        ; 4A       ; produto[6]                      ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; AB17     ; 145        ; 4A       ; produto[10]                     ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; AB18     ; 147        ; 4A       ; produto[14]                     ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; AB19     ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
-; AB20     ; 148        ; 4A       ; produto[10]                     ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; AB21     ; 150        ; 4A       ; produto[1]                      ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; AB22     ; 161        ; 4A       ; multiplicando[5]                ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; AB20     ; 148        ; 4A       ; inicio                          ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; AB21     ; 150        ; 4A       ; rst                             ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; AB22     ; 161        ; 4A       ; multiplicando[1]                ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; B1       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; B2       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; B3       ;            ;          ; DNU                             ;        ;              ;                     ; --           ;                 ; --       ; --           ;
@@ -808,7 +812,7 @@ The pin-out file can be found in /home/raffaellasf/Documentos/Quartus/Multiplica
 ; P11      ;            ; --       ; VCC                             ; power  ;              ; 1.1V                ; --           ;                 ; --       ; --           ;
 ; P12      ; 123        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; P13      ;            ; --       ; VCC                             ; power  ;              ; 1.1V                ; --           ;                 ; --       ; --           ;
-; P14      ; 168        ; 4A       ; multiplicando[10]               ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; P14      ; 168        ; 4A       ; multiplicando[11]               ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; P15      ;            ; --       ; VCC                             ; power  ;              ; 1.1V                ; --           ;                 ; --       ; --           ;
 ; P16      ; 225        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; P17      ; 227        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
@@ -830,7 +834,7 @@ The pin-out file can be found in /home/raffaellasf/Documentos/Quartus/Multiplica
 ; R11      ; 127        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; R12      ; 121        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; R13      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
-; R14      ; 170        ; 4A       ; multiplicando[4]                ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; R14      ; 170        ; 4A       ; multiplicador[7]                ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; R15      ; 219        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; R16      ; 221        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; R17      ; 223        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
@@ -850,9 +854,9 @@ The pin-out file can be found in /home/raffaellasf/Documentos/Quartus/Multiplica
 ; T9       ; 109        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; T10      ; 117        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; T11      ;            ; 3B       ; VCCIO3B                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
-; T12      ; 136        ; 4A       ; multiplicador[2]                ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; T13      ; 138        ; 4A       ; multiplicador[6]                ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; T14      ; 152        ; 4A       ; rst                             ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; T12      ; 136        ; 4A       ; produto[6]                      ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; T13      ; 138        ; 4A       ; produto[11]                     ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; T14      ; 152        ; 4A       ; produto[3]                      ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; T15      ; 217        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
 ; T16      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; T17      ; 215        ; 5A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Row I/O      ;                 ; no       ; On           ;
@@ -875,14 +879,14 @@ The pin-out file can be found in /home/raffaellasf/Documentos/Quartus/Multiplica
 ; U12      ; 122        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; U13      ; 135        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; U14      ;            ; 4A       ; VCCIO4A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
-; U15      ; 154        ; 4A       ; inicio                          ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; U16      ; 176        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; U15      ; 154        ; 4A       ; produto[8]                      ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; U16      ; 176        ; 4A       ; multiplicando[9]                ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; U17      ; 178        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; U18      ;            ; --       ; VCCA_FPLL                       ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; U19      ;            ; 4A       ; VCCIO4A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; U20      ; 179        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; U21      ; 177        ; 4A       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; U22      ; 172        ; 4A       ; multiplicando[1]                ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; U22      ; 172        ; 4A       ; multiplicando[3]                ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; V1       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; V2       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; V3       ; 50         ; 3A       ; ^DCLK                           ;        ;              ;                     ; Weak Pull Up ;                 ; --       ; On           ;
@@ -895,15 +899,15 @@ The pin-out file can be found in /home/raffaellasf/Documentos/Quartus/Multiplica
 ; V10      ; 103        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; V11      ;            ;          ; DNU                             ;        ;              ;                     ; --           ;                 ; --       ; --           ;
 ; V12      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
-; V13      ; 133        ; 4A       ; produto[0]                      ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; V14      ; 144        ; 4A       ; produto[14]                     ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; V15      ; 146        ; 4A       ; produto[9]                      ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; V16      ; 160        ; 4A       ; multiplicando[3]                ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; V13      ; 133        ; 4A       ; produto[1]                      ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; V14      ; 144        ; 4A       ; produto[2]                      ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; V15      ; 146        ; 4A       ; produto[0]                      ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; V16      ; 160        ; 4A       ; multiplicador[3]                ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; V17      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
-; V18      ; 175        ; 4A       ; multiplicando[9]                ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; V19      ; 173        ; 4A       ; multiplicando[2]                ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; V20      ; 157        ; 4A       ; multiplicando[7]                ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; V21      ; 174        ; 4A       ; multiplicando[12]               ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; V18      ; 175        ; 4A       ; multiplicando[6]                ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; V19      ; 173        ; 4A       ; multiplicando[5]                ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; V20      ; 157        ; 4A       ; multiplicador[4]                ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; V21      ; 174        ; 4A       ; multiplicando[4]                ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; V22      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; W1       ; 35         ; B0L      ; GND                             ;        ;              ;                     ; --           ;                 ; --       ; --           ;
 ; W2       ; 34         ; B0L      ; GND                             ;        ;              ;                     ; --           ;                 ; --       ; --           ;
@@ -920,13 +924,13 @@ The pin-out file can be found in /home/raffaellasf/Documentos/Quartus/Multiplica
 ; W13      ;            ; --       ; VCC_AUX                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; W14      ;            ; 3B, 4A   ; VCCPD3B4A                       ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; W15      ;            ; 4A       ; VCCIO4A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
-; W16      ; 162        ; 4A       ; multiplicando[11]               ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; W16      ; 162        ; 4A       ; multiplicando[2]                ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; W17      ;            ; 3B, 4A   ; VCCPD3B4A                       ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
 ; W18      ;            ; --       ; VCC_AUX                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
-; W19      ; 159        ; 4A       ; multiplicando[15]               ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; W19      ; 159        ; 4A       ; multiplicador[0]                ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; W20      ;            ; 4A       ; VCCIO4A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
-; W21      ; 171        ; 4A       ; multiplicando[14]               ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; W22      ; 166        ; 4A       ; produto[2]                      ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; W21      ; 171        ; 4A       ; multiplicador[2]                ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; W22      ; 166        ; 4A       ; multiplicando[10]               ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; Y1       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; Y2       ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; Y3       ; 36         ; B0L      ; GXB_NC                          ;        ;              ;                     ; --           ;                 ; --       ; --           ;
@@ -940,15 +944,15 @@ The pin-out file can be found in /home/raffaellasf/Documentos/Quartus/Multiplica
 ; Y11      ; 129        ; 3B       ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; Y12      ;            ; 3B       ; VREFB3BN0                       ; power  ;              ;                     ; --           ;                 ; --       ; --           ;
 ; Y13      ;            ; 3B       ; VCCIO3B                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
-; Y14      ; 141        ; 4A       ; multiplicador[0]                ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; Y15      ; 143        ; 4A       ; multiplicador[5]                ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; Y16      ; 149        ; 4A       ; produto[5]                      ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; Y17      ; 151        ; 4A       ; produto[3]                      ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; Y14      ; 141        ; 4A       ; produto[9]                      ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; Y15      ; 143        ; 4A       ; multiplicando[15]               ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; Y16      ; 149        ; 4A       ; produto[4]                      ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; Y17      ; 151        ; 4A       ; produto[12]                     ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 ; Y18      ;            ;          ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
-; Y19      ; 167        ; 4A       ; produto[13]                     ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; Y20      ; 165        ; 4A       ; produto[12]                     ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; Y21      ; 169        ; 4A       ; multiplicando[13]               ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
-; Y22      ; 164        ; 4A       ; produto[8]                      ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; Y19      ; 167        ; 4A       ; multiplicador[1]                ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; Y20      ; 165        ; 4A       ; multiplicador[5]                ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; Y21      ; 169        ; 4A       ; multiplicando[12]               ; input  ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
+; Y22      ; 164        ; 4A       ; produto[5]                      ; output ; 2.5 V        ;                     ; Column I/O   ; N               ; no       ; Off          ;
 +----------+------------+----------+---------------------------------+--------+--------------+---------------------+--------------+-----------------+----------+--------------+
 Note: Pin directions (input, output or bidir) are based on device operating in user mode.
 
@@ -1049,13 +1053,14 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +-------------------+-------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fitter Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                                                  ;
-+----------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+---------------------+-------------+--------------+
-; Compilation Hierarchy Node ; ALMs needed [=A-B+C] ; [A] ALMs used in final placement ; [B] Estimate of ALMs recoverable by dense packing ; [C] Estimate of ALMs unavailable ; ALMs used for memory ; Combinational ALUTs ; Dedicated Logic Registers ; I/O Registers ; Block Memory Bits ; M10Ks ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
-+----------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+---------------------+-------------+--------------+
-; |multi_8b                  ; 25.5 (25.5)          ; 26.5 (26.5)                      ; 1.0 (1.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 26 (26)             ; 45 (45)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 44   ; 0            ; |multi_8b           ; multi_8b    ; work         ;
-+----------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+---------------------+-------------+--------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                                                            ;
++----------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+-------------------------------+-------------+--------------+
+; Compilation Hierarchy Node ; ALMs needed [=A-B+C] ; [A] ALMs used in final placement ; [B] Estimate of ALMs recoverable by dense packing ; [C] Estimate of ALMs unavailable ; ALMs used for memory ; Combinational ALUTs ; Dedicated Logic Registers ; I/O Registers ; Block Memory Bits ; M10Ks ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name           ; Entity Name ; Library Name ;
++----------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+-------------------------------+-------------+--------------+
+; |multi_8b                  ; 25.5 (21.5)          ; 26.5 (22.5)                      ; 1.0 (1.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 26 (10)             ; 45 (45)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 44   ; 0            ; |multi_8b                     ; multi_8b    ; work         ;
+;    |mux8x1_16b:mux_soma|   ; 4.0 (4.0)            ; 4.0 (4.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 16 (16)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |multi_8b|mux8x1_16b:mux_soma ; mux8x1_16b  ; work         ;
++----------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+-------------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -1083,31 +1088,31 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; fim               ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
 ; clk               ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; rst               ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; inicio            ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; multiplicador[0]  ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; multiplicando[0]  ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; inicio            ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; multiplicador[0]  ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; multiplicando[0]  ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; multiplicador[1]  ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; multiplicando[1]  ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; multiplicando[2]  ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; multiplicando[3]  ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; multiplicando[4]  ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; multiplicando[4]  ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; multiplicando[5]  ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; multiplicando[6]  ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; multiplicando[6]  ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; multiplicando[7]  ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; multiplicando[8]  ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; multiplicando[9]  ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; multiplicando[10] ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; multiplicando[11] ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; multiplicando[12] ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; multiplicando[13] ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; multiplicando[9]  ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; multiplicando[10] ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; multiplicando[11] ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; multiplicando[12] ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; multiplicando[13] ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; multiplicando[14] ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; multiplicando[15] ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; multiplicando[15] ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; multiplicador[2]  ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; multiplicador[3]  ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; multiplicador[4]  ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; multiplicador[5]  ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; multiplicador[6]  ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; multiplicador[7]  ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; multiplicador[4]  ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; multiplicador[5]  ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; multiplicador[6]  ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; multiplicador[7]  ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 +-------------------+----------+----+------+------+----+------+-------+--------+------------------------+--------------------------+
 
 
@@ -1164,57 +1169,57 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - B[0]             ; 0                 ; 0       ;
 ;      - A[7]             ; 0                 ; 0       ;
 ; inicio                  ;                   ;         ;
-;      - produto[9]~reg0  ; 0                 ; 0       ;
-;      - produto[1]~reg0  ; 0                 ; 0       ;
-;      - produto[2]~reg0  ; 0                 ; 0       ;
-;      - produto[3]~reg0  ; 0                 ; 0       ;
-;      - produto[4]~reg0  ; 0                 ; 0       ;
-;      - produto[5]~reg0  ; 0                 ; 0       ;
-;      - produto[6]~reg0  ; 0                 ; 0       ;
-;      - produto[7]~reg0  ; 0                 ; 0       ;
-;      - produto[8]~reg0  ; 0                 ; 0       ;
-;      - produto[10]~reg0 ; 0                 ; 0       ;
-;      - produto[11]~reg0 ; 0                 ; 0       ;
-;      - produto[12]~reg0 ; 0                 ; 0       ;
-;      - produto[13]~reg0 ; 0                 ; 0       ;
-;      - produto[14]~reg0 ; 0                 ; 0       ;
-;      - produto[15]~reg0 ; 0                 ; 0       ;
-;      - produto[0]~reg0  ; 0                 ; 0       ;
-;      - B[1]             ; 0                 ; 0       ;
-;      - B[11]            ; 0                 ; 0       ;
-;      - B[9]             ; 0                 ; 0       ;
-;      - B[8]             ; 0                 ; 0       ;
-;      - B[7]             ; 0                 ; 0       ;
-;      - B[6]             ; 0                 ; 0       ;
-;      - B[5]             ; 0                 ; 0       ;
-;      - B[4]             ; 0                 ; 0       ;
-;      - B[3]             ; 0                 ; 0       ;
-;      - B[2]             ; 0                 ; 0       ;
-;      - A[6]             ; 0                 ; 0       ;
-;      - B[10]            ; 0                 ; 0       ;
-;      - A[0]             ; 0                 ; 0       ;
-;      - A[1]             ; 0                 ; 0       ;
-;      - A[2]             ; 0                 ; 0       ;
-;      - A[3]             ; 0                 ; 0       ;
-;      - A[4]             ; 0                 ; 0       ;
-;      - A[5]             ; 0                 ; 0       ;
-;      - B[13]            ; 0                 ; 0       ;
-;      - B[14]            ; 0                 ; 0       ;
-;      - B[15]            ; 0                 ; 0       ;
-;      - B[12]            ; 0                 ; 0       ;
-;      - fim~reg0         ; 0                 ; 0       ;
-;      - count[3]         ; 0                 ; 0       ;
-;      - produto[9]~0     ; 0                 ; 0       ;
-;      - count[0]~0       ; 0                 ; 0       ;
-;      - count[2]~1       ; 0                 ; 0       ;
-;      - count[1]~2       ; 0                 ; 0       ;
-;      - B[1]~0           ; 0                 ; 0       ;
-;      - B~1              ; 0                 ; 0       ;
-;      - A~0              ; 0                 ; 0       ;
+;      - produto[9]~reg0  ; 1                 ; 0       ;
+;      - produto[1]~reg0  ; 1                 ; 0       ;
+;      - produto[2]~reg0  ; 1                 ; 0       ;
+;      - produto[3]~reg0  ; 1                 ; 0       ;
+;      - produto[4]~reg0  ; 1                 ; 0       ;
+;      - produto[5]~reg0  ; 1                 ; 0       ;
+;      - produto[6]~reg0  ; 1                 ; 0       ;
+;      - produto[7]~reg0  ; 1                 ; 0       ;
+;      - produto[8]~reg0  ; 1                 ; 0       ;
+;      - produto[10]~reg0 ; 1                 ; 0       ;
+;      - produto[11]~reg0 ; 1                 ; 0       ;
+;      - produto[12]~reg0 ; 1                 ; 0       ;
+;      - produto[13]~reg0 ; 1                 ; 0       ;
+;      - produto[14]~reg0 ; 1                 ; 0       ;
+;      - produto[15]~reg0 ; 1                 ; 0       ;
+;      - produto[0]~reg0  ; 1                 ; 0       ;
+;      - B[1]             ; 1                 ; 0       ;
+;      - B[11]            ; 1                 ; 0       ;
+;      - B[9]             ; 1                 ; 0       ;
+;      - B[8]             ; 1                 ; 0       ;
+;      - B[7]             ; 1                 ; 0       ;
+;      - B[6]             ; 1                 ; 0       ;
+;      - B[5]             ; 1                 ; 0       ;
+;      - B[4]             ; 1                 ; 0       ;
+;      - B[3]             ; 1                 ; 0       ;
+;      - B[2]             ; 1                 ; 0       ;
+;      - A[6]             ; 1                 ; 0       ;
+;      - B[10]            ; 1                 ; 0       ;
+;      - A[0]             ; 1                 ; 0       ;
+;      - A[1]             ; 1                 ; 0       ;
+;      - A[2]             ; 1                 ; 0       ;
+;      - A[3]             ; 1                 ; 0       ;
+;      - A[4]             ; 1                 ; 0       ;
+;      - A[5]             ; 1                 ; 0       ;
+;      - B[13]            ; 1                 ; 0       ;
+;      - B[14]            ; 1                 ; 0       ;
+;      - B[15]            ; 1                 ; 0       ;
+;      - B[12]            ; 1                 ; 0       ;
+;      - fim~reg0         ; 1                 ; 0       ;
+;      - count[3]         ; 1                 ; 0       ;
+;      - produto[9]~0     ; 1                 ; 0       ;
+;      - count[0]~0       ; 1                 ; 0       ;
+;      - count[2]~1       ; 1                 ; 0       ;
+;      - count[1]~2       ; 1                 ; 0       ;
+;      - B[1]~0           ; 1                 ; 0       ;
+;      - B~1              ; 1                 ; 0       ;
+;      - A~0              ; 1                 ; 0       ;
 ; multiplicador[0]        ;                   ;         ;
-;      - A[0]~feeder      ; 0                 ; 0       ;
+;      - A[0]~feeder      ; 1                 ; 0       ;
 ; multiplicando[0]        ;                   ;         ;
-;      - B~1              ; 0                 ; 0       ;
+;      - B~1              ; 1                 ; 0       ;
 ; multiplicador[1]        ;                   ;         ;
 ;      - A[1]~feeder      ; 1                 ; 0       ;
 ; multiplicando[1]        ;                   ;         ;
@@ -1224,41 +1229,41 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; multiplicando[3]        ;                   ;         ;
 ;      - B[3]~feeder      ; 1                 ; 0       ;
 ; multiplicando[4]        ;                   ;         ;
-;      - B[4]~feeder      ; 0                 ; 0       ;
+;      - B[4]~feeder      ; 1                 ; 0       ;
 ; multiplicando[5]        ;                   ;         ;
 ;      - B[5]~feeder      ; 1                 ; 0       ;
 ; multiplicando[6]        ;                   ;         ;
-;      - B[6]~feeder      ; 1                 ; 0       ;
+;      - B[6]~feeder      ; 0                 ; 0       ;
 ; multiplicando[7]        ;                   ;         ;
 ;      - B[7]~feeder      ; 1                 ; 0       ;
 ; multiplicando[8]        ;                   ;         ;
 ;      - B[8]~feeder      ; 1                 ; 0       ;
 ; multiplicando[9]        ;                   ;         ;
-;      - B[9]~feeder      ; 0                 ; 0       ;
+;      - B[9]~feeder      ; 1                 ; 0       ;
 ; multiplicando[10]       ;                   ;         ;
-;      - B[10]~feeder     ; 0                 ; 0       ;
+;      - B[10]~feeder     ; 1                 ; 0       ;
 ; multiplicando[11]       ;                   ;         ;
-;      - B[11]~feeder     ; 1                 ; 0       ;
+;      - B[11]~feeder     ; 0                 ; 0       ;
 ; multiplicando[12]       ;                   ;         ;
-;      - B[12]~feeder     ; 1                 ; 0       ;
+;      - B[12]~feeder     ; 0                 ; 0       ;
 ; multiplicando[13]       ;                   ;         ;
-;      - B[13]~feeder     ; 1                 ; 0       ;
+;      - B[13]~feeder     ; 0                 ; 0       ;
 ; multiplicando[14]       ;                   ;         ;
 ;      - B[14]~feeder     ; 1                 ; 0       ;
 ; multiplicando[15]       ;                   ;         ;
-;      - B[15]~feeder     ; 1                 ; 0       ;
+;      - B[15]~feeder     ; 0                 ; 0       ;
 ; multiplicador[2]        ;                   ;         ;
 ;      - A[2]~feeder      ; 1                 ; 0       ;
 ; multiplicador[3]        ;                   ;         ;
 ;      - A[3]~feeder      ; 1                 ; 0       ;
 ; multiplicador[4]        ;                   ;         ;
-;      - A[4]~feeder      ; 0                 ; 0       ;
+;      - A[4]~feeder      ; 1                 ; 0       ;
 ; multiplicador[5]        ;                   ;         ;
-;      - A[5]~feeder      ; 1                 ; 0       ;
+;      - A[5]~feeder      ; 0                 ; 0       ;
 ; multiplicador[6]        ;                   ;         ;
-;      - A[6]~feeder      ; 0                 ; 0       ;
+;      - A[6]~feeder      ; 1                 ; 0       ;
 ; multiplicador[7]        ;                   ;         ;
-;      - A~0              ; 1                 ; 0       ;
+;      - A~0              ; 0                 ; 0       ;
 +-------------------------+-------------------+---------+
 
 
@@ -1267,11 +1272,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------+--------------------+---------+-------------------------+--------+----------------------+------------------+---------------------------+
 ; Name         ; Location           ; Fan-Out ; Usage                   ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +--------------+--------------------+---------+-------------------------+--------+----------------------+------------------+---------------------------+
-; B[1]~0       ; LABCELL_X60_Y3_N33 ; 24      ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; B[1]~0       ; LABCELL_X61_Y3_N57 ; 24      ; Clock enable            ; no     ; --                   ; --               ; --                        ;
 ; clk          ; PIN_M16            ; 45      ; Clock                   ; yes    ; Global Clock         ; GCLK10           ; --                        ;
-; inicio       ; PIN_U15            ; 47      ; Sync. clear, Sync. load ; no     ; --                   ; --               ; --                        ;
-; produto[9]~0 ; LABCELL_X60_Y3_N36 ; 16      ; Clock enable            ; no     ; --                   ; --               ; --                        ;
-; rst          ; PIN_T14            ; 45      ; Async. clear            ; no     ; --                   ; --               ; --                        ;
+; inicio       ; PIN_AB20           ; 47      ; Sync. clear, Sync. load ; no     ; --                   ; --               ; --                        ;
+; produto[9]~0 ; LABCELL_X61_Y3_N48 ; 16      ; Clock enable            ; no     ; --                   ; --               ; --                        ;
+; rst          ; PIN_AB21           ; 45      ; Async. clear            ; no     ; --                   ; --               ; --                        ;
 +--------------+--------------------+---------+-------------------------+--------+----------------------+------------------+---------------------------+
 
 
@@ -1289,22 +1294,22 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------+------------------------+
 ; Routing Resource Type        ; Usage                  ;
 +------------------------------+------------------------+
-; Block interconnects          ; 80 / 374,484 ( < 1 % ) ;
-; C12 interconnects            ; 0 / 16,664 ( 0 % )     ;
-; C2 interconnects             ; 16 / 155,012 ( < 1 % ) ;
-; C4 interconnects             ; 35 / 72,600 ( < 1 % )  ;
+; Block interconnects          ; 93 / 374,484 ( < 1 % ) ;
+; C12 interconnects            ; 1 / 16,664 ( < 1 % )   ;
+; C2 interconnects             ; 23 / 155,012 ( < 1 % ) ;
+; C4 interconnects             ; 36 / 72,600 ( < 1 % )  ;
 ; DQS bus muxes                ; 0 / 30 ( 0 % )         ;
 ; DQS-18 I/O buses             ; 0 / 30 ( 0 % )         ;
 ; DQS-9 I/O buses              ; 0 / 30 ( 0 % )         ;
 ; Direct links                 ; 20 / 374,484 ( < 1 % ) ;
 ; Global clocks                ; 1 / 16 ( 6 % )         ;
 ; Horizontal periphery clocks  ; 0 / 72 ( 0 % )         ;
-; Local interconnects          ; 41 / 112,960 ( < 1 % ) ;
+; Local interconnects          ; 39 / 112,960 ( < 1 % ) ;
 ; Quadrant clocks              ; 0 / 88 ( 0 % )         ;
-; R14 interconnects            ; 4 / 15,868 ( < 1 % )   ;
-; R14/C12 interconnect drivers ; 4 / 27,256 ( < 1 % )   ;
-; R3 interconnects             ; 44 / 169,296 ( < 1 % ) ;
-; R6 interconnects             ; 33 / 330,800 ( < 1 % ) ;
+; R14 interconnects            ; 6 / 15,868 ( < 1 % )   ;
+; R14/C12 interconnect drivers ; 7 / 27,256 ( < 1 % )   ;
+; R3 interconnects             ; 47 / 169,296 ( < 1 % ) ;
+; R6 interconnects             ; 37 / 330,800 ( < 1 % ) ;
 ; Spine clocks                 ; 1 / 480 ( < 1 % )      ;
 ; Wire stub REs                ; 0 / 20,834 ( 0 % )     ;
 +------------------------------+------------------------+
@@ -1464,7 +1469,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------+----------------------+-------------------+
 ; Source Clock(s) ; Destination Clock(s) ; Delay Added in ns ;
 +-----------------+----------------------+-------------------+
-; clk             ; clk                  ; 9.1               ;
+; clk             ; clk                  ; 6.4               ;
 +-----------------+----------------------+-------------------+
 Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
 This will disable optimization of problematic paths and expose them for further analysis using the Timing Analyzer.
@@ -1475,25 +1480,25 @@ This will disable optimization of problematic paths and expose them for further 
 +-----------------+----------------------+-------------------+
 ; Source Register ; Destination Register ; Delay Added in ns ;
 +-----------------+----------------------+-------------------+
-; B[0]            ; produto[15]~reg0     ; 0.549             ;
-; B[13]           ; produto[15]~reg0     ; 0.396             ;
-; B[11]           ; produto[15]~reg0     ; 0.396             ;
-; B[15]           ; produto[15]~reg0     ; 0.395             ;
-; B[7]            ; produto[15]~reg0     ; 0.395             ;
+; B[0]            ; produto[15]~reg0     ; 0.550             ;
+; B[5]            ; produto[15]~reg0     ; 0.408             ;
+; B[15]           ; produto[15]~reg0     ; 0.399             ;
 ; B[10]           ; produto[15]~reg0     ; 0.395             ;
-; B[4]            ; produto[15]~reg0     ; 0.395             ;
+; B[8]            ; produto[15]~reg0     ; 0.395             ;
+; B[6]            ; produto[15]~reg0     ; 0.395             ;
 ; B[2]            ; produto[15]~reg0     ; 0.395             ;
-; B[1]            ; produto[15]~reg0     ; 0.394             ;
-; B[6]            ; produto[15]~reg0     ; 0.394             ;
+; B[4]            ; produto[15]~reg0     ; 0.393             ;
+; B[12]           ; produto[15]~reg0     ; 0.392             ;
+; B[11]           ; produto[15]~reg0     ; 0.385             ;
 ; B[9]            ; produto[15]~reg0     ; 0.385             ;
-; B[14]           ; produto[15]~reg0     ; 0.384             ;
-; B[12]           ; produto[15]~reg0     ; 0.384             ;
-; B[8]            ; produto[15]~reg0     ; 0.384             ;
-; B[3]            ; produto[15]~reg0     ; 0.384             ;
-; B[5]            ; produto[15]~reg0     ; 0.383             ;
-; count[1]        ; count[0]             ; 0.379             ;
-; count[2]        ; count[0]             ; 0.376             ;
-; count[0]        ; count[2]             ; 0.319             ;
+; B[7]            ; produto[15]~reg0     ; 0.385             ;
+; B[3]            ; produto[15]~reg0     ; 0.385             ;
+; B[1]            ; produto[15]~reg0     ; 0.384             ;
+; count[0]        ; count[3]             ; 0.220             ;
+; count[1]        ; count[0]             ; 0.172             ;
+; B[13]           ; produto[15]~reg0     ; 0.123             ;
+; B[14]           ; produto[15]~reg0     ; 0.122             ;
+; count[2]        ; count[0]             ; 0.117             ;
 +-----------------+----------------------+-------------------+
 Note: This table only shows the top 19 path(s) that have the largest delay added for hold.
 
@@ -1504,8 +1509,8 @@ Note: This table only shows the top 19 path(s) that have the largest delay added
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 24 processors detected
 Info (119006): Selected device 5CGXFC7C7F23C8 for design "multi_8b"
-Info (21076): High junction temperature operating condition is not set. Assuming a default value of '85'.
-Info (21076): Low junction temperature operating condition is not set. Assuming a default value of '0'.
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
 Info (171003): Fitter is performing an Auto Fit compilation, which may decrease Fitter effort to reduce compilation time
 Warning (292013): Feature LogicLock is only available with a valid subscription license. You can purchase a software subscription to gain full access to this feature.
 Warning (15714): Some pins have incomplete I/O assignments. Refer to the I/O Assignment Warnings report for details
@@ -1522,7 +1527,7 @@ Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Tim
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
-Info (11798): Fitter preparation operations ending: elapsed time is 00:00:04
+Info (11798): Fitter preparation operations ending: elapsed time is 00:00:03
 Info (170189): Fitter placement preparation operations beginning
 Info (14951): The Fitter is using Advanced Physical Optimization.
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:01
@@ -1535,16 +1540,26 @@ Info (170195): Router estimated average interconnect usage is 0% of the availabl
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
-Info (11888): Total time spent on timing analysis during the Fitter is 0.13 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.14 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
+Warning (292000): FLEXlm software error: Bad version number - must be floating point number, with no letters. Feature:       quartus_noexist Version text:  Licensed License path:  /home/raffaellasf/intelFPGA_lite/20.1/licenses/license.txt: FlexNet Licensing error:-77,4.
+Warning (292000): FLEXlm software error: Bad version number - must be floating point number, with no letters. Feature:       quartus_seu_mitigation Version text:  Licensed License path:  /home/raffaellasf/intelFPGA_lite/20.1/licenses/license.txt: FlexNet Licensing error:-77,4.
+Warning (292000): FLEXlm software error: Bad version number - must be floating point number, with no letters. Feature:       quartus_seu_mitigation Version text:  Licensed License path:  /home/raffaellasf/intelFPGA_lite/20.1/licenses/license.txt: FlexNet Licensing error:-77,4.
 Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:02
-Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 2895 megabytes
-    Info: Processing ended: Sat May 24 14:51:39 2025
+Info (144001): Generated suppressed messages file /home/raffaellasf/Documentos/Git/ULA_Multiplicador_Divisor/ULA_Multiplicador_Divisor/Multiplicador/output_files/multi_8b.fit.smsg
+Info: Quartus Prime Fitter was successful. 0 errors, 20 warnings
+    Info: Peak virtual memory: 2883 megabytes
+    Info: Processing ended: Mon May 26 14:10:15 2025
     Info: Elapsed time: 00:00:14
-    Info: Total CPU time (on all processors): 00:00:44
+    Info: Total CPU time (on all processors): 00:00:45
+
+
++----------------------------+
+; Fitter Suppressed Messages ;
++----------------------------+
+The suppressed messages can be found in /home/raffaellasf/Documentos/Git/ULA_Multiplicador_Divisor/ULA_Multiplicador_Divisor/Multiplicador/output_files/multi_8b.fit.smsg.
 
 
