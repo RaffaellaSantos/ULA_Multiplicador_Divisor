@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at div_8b.v(14): always construct contains both blocking and non-blocking assignments File: /home/raffaellasf/Documentos/Git/ULA_Multiplicador_Divisor/ULA_Multiplicador_Divisor/Divisor/div_8b.v Line: 14

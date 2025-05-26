@@ -1,0 +1,59 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/raffaellasf/Documentos/Git/ULA_Multiplicador_Divisor/ULA_Multiplicador_Divisor/Divisor/simulation/modelsim
+vdiv_8b
+Z1 !s110 1748292696
+!i10b 1
+!s100 IcDlS<`AilkbnWaNfkVBk2
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IEGSWcF@HflY]IU4DhT^3;2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1748292627
+8/home/raffaellasf/Documentos/Git/ULA_Multiplicador_Divisor/ULA_Multiplicador_Divisor/Divisor/div_8b.v
+F/home/raffaellasf/Documentos/Git/ULA_Multiplicador_Divisor/ULA_Multiplicador_Divisor/Divisor/div_8b.v
+!i122 0
+L0 1 51
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1748292696.000000
+!s107 /home/raffaellasf/Documentos/Git/ULA_Multiplicador_Divisor/ULA_Multiplicador_Divisor/Divisor/div_8b.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/raffaellasf/Documentos/Git/ULA_Multiplicador_Divisor/ULA_Multiplicador_Divisor/Divisor|/home/raffaellasf/Documentos/Git/ULA_Multiplicador_Divisor/ULA_Multiplicador_Divisor/Divisor/div_8b.v|
+!i113 1
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work +incdir+/home/raffaellasf/Documentos/Git/ULA_Multiplicador_Divisor/ULA_Multiplicador_Divisor/Divisor
+Z8 tCvgOpt 0
+vtb_div_8b
+R1
+!i10b 1
+!s100 :G44z`CP;71da^_h@V1fW1
+R2
+IIGJac=EoaN_O:JYiE>ZQg1
+R3
+R0
+w1748292687
+8/home/raffaellasf/Documentos/Git/ULA_Multiplicador_Divisor/ULA_Multiplicador_Divisor/Divisor/tb_div_8b.v
+F/home/raffaellasf/Documentos/Git/ULA_Multiplicador_Divisor/ULA_Multiplicador_Divisor/Divisor/tb_div_8b.v
+!i122 1
+L0 3 86
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/raffaellasf/Documentos/Git/ULA_Multiplicador_Divisor/ULA_Multiplicador_Divisor/Divisor/tb_div_8b.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/raffaellasf/Documentos/Git/ULA_Multiplicador_Divisor/ULA_Multiplicador_Divisor/Divisor|/home/raffaellasf/Documentos/Git/ULA_Multiplicador_Divisor/ULA_Multiplicador_Divisor/Divisor/tb_div_8b.v|
+!i113 1
+R6
+R7
+R8

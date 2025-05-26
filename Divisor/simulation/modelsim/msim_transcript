@@ -1,0 +1,55 @@
+# do div_8b_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying /home/raffaellasf/intelFPGA_lite/20.1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+/home/raffaellasf/Documentos/Git/ULA_Multiplicador_Divisor/ULA_Multiplicador_Divisor/Divisor {/home/raffaellasf/Documentos/Git/ULA_Multiplicador_Divisor/ULA_Multiplicador_Divisor/Divisor/div_8b.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:51:36 on May 26,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/raffaellasf/Documentos/Git/ULA_Multiplicador_Divisor/ULA_Multiplicador_Divisor/Divisor" /home/raffaellasf/Documentos/Git/ULA_Multiplicador_Divisor/ULA_Multiplicador_Divisor/Divisor/div_8b.v 
+# -- Compiling module div_8b
+# 
+# Top level modules:
+# 	div_8b
+# End time: 16:51:36 on May 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+/home/raffaellasf/Documentos/Git/ULA_Multiplicador_Divisor/ULA_Multiplicador_Divisor/Divisor {/home/raffaellasf/Documentos/Git/ULA_Multiplicador_Divisor/ULA_Multiplicador_Divisor/Divisor/tb_div_8b.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:51:36 on May 26,2025
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/raffaellasf/Documentos/Git/ULA_Multiplicador_Divisor/ULA_Multiplicador_Divisor/Divisor" /home/raffaellasf/Documentos/Git/ULA_Multiplicador_Divisor/ULA_Multiplicador_Divisor/Divisor/tb_div_8b.v 
+# -- Compiling module tb_div_8b
+# 
+# Top level modules:
+# 	tb_div_8b
+# End time: 16:51:36 on May 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  tb_div_8b
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" tb_div_8b 
+# Start time: 16:51:36 on May 26,2025
+# Loading work.tb_div_8b
+# Loading work.div_8b
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Início dos testes
+# Teste 1 OK: 7 / 2 =   3 resto     1
+# Teste 2 OK: 200 / 10 =  20 resto     0
+# Fim dos testes
+# Teste 3 OK: 32 / 7 =   4 resto     4
+# Fim dos testes
+# ** Note: $finish    : /home/raffaellasf/Documentos/Git/ULA_Multiplicador_Divisor/ULA_Multiplicador_Divisor/Divisor/tb_div_8b.v(85)
+#    Time: 315 ns  Iteration: 0  Instance: /tb_div_8b
+# End time: 16:51:47 on May 26,2025, Elapsed time: 0:00:11
+# Errors: 0, Warnings: 0

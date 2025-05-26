@@ -1,0 +1,9 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+/home/raffaellasf/Documentos/Git/ULA_Multiplicador_Divisor/ULA_Multiplicador_Divisor/Divisor {/home/raffaellasf/Documentos/Git/ULA_Multiplicador_Divisor/ULA_Multiplicador_Divisor/Divisor/div_8b.v}
+

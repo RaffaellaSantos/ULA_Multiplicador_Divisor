@@ -1,0 +1,80 @@
+`timescale 1ns / 1ps
+
+module tb_div_8b;
+
+    // Entradas
+    reg clk;
+    reg rst;
+    reg inicio;
+    reg [7:0] A, B;
+
+    // Saídas
+    wire [7:0] quociente;
+    wire fim;
+	 wire [7:0] resto_out;
+
+	 div_8b uut (
+		.clk(clk),
+		.rst(rst),
+		.inicio(inicio),
+		.quociente(quociente),
+		.A(A),
+		.B(B),
+		.fim(fim),
+		.resto_out(resto_out) // nova conexão
+	 );
+
+
+    // Clock 10ns (100 MHz)
+    always #5 clk = ~clk;
+
+    // Procedimento de teste
+    initial begin
+        $display("Início do Teste");
+        clk = 0;
+        rst = 1;
+        inicio = 0;
+        A = 0;
+        B = 0;
+
+        // Reset
+        #20;
+        rst = 0;
+
+        // Teste 1: 7 / 2 = 3 resto 1
+        A = 8'd7;
+        B = 8'd2;
+        inicio = 1;
+        #10;
+        inicio = 0;
+
+        wait(fim == 1);
+        #10;
+        if (quociente == 8'd3)
+            $display("Teste 1 OK: 7 / 3 = %d resto %d", quociente, resto_out);
+        else
+            $display("Teste 1 FALHOU: esperado 20, obtido %d", quociente);
+
+        // Teste 2: 200 / 10 = 20
+        rst = 1;
+        #10;
+        rst = 0;
+
+        A = 8'd200;
+        B = 8'd10;
+        inicio = 1;
+        #10;
+        inicio = 0;
+
+        wait(fim == 1);
+        #10;
+        if (quociente == 8'd20)
+            $display("Teste 2 OK: 200 / 10 = %d resto %d", quociente, resto_out);
+        else
+            $display("Teste 2 FALHOU: esperado 20, obtido %d", quociente);
+
+        $display("Fim dos testes");
+        $finish;
+    end
+
+endmodule

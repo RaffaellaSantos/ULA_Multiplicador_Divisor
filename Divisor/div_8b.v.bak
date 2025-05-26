@@ -1,0 +1,38 @@
+module div_8b (
+	input clk, rst, inicio,
+	inout reg [7:0] quociente,
+	inout reg [15:0] divisor, resto,
+	output reg fim
+);
+	
+//	reg [7:0] A;
+//	reg [15:0] B;
+//	reg [3:0] count;
+	
+	always @(posedge clk or posedge rst) begin
+		if (rst) begin
+//			A <= 0;
+//			B <= 0;
+			resto <= 0;
+			fim <= 0;
+		end else if (inicio) begin
+			quociente <= 0;
+			divisor <= 0;
+			count <= 9;
+			resto <= 0;
+			fim <= 0;
+		end else if (count > 0) begin
+			resto <= divisor - resto;
+			if (resto < 0) begin
+				resto <= divisor + resto;
+				quociente <= quociente << 1;
+				quociente[0] <= 1'b0; 
+			end else if (resto >= 0) begin
+				quociente <= quociente << 1;
+				quociente[3] <= 1'b1;
+			end
+			divisor <= divisor >> 1;
+		end
+	end
+
+endmodule 
