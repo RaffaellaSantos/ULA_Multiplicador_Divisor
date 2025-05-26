@@ -31,7 +31,7 @@ ULA_Multiplicador_Divisor/
 * A ULA implementada neste projeto é básica e só realiza quatro operações.
 
 * **Operações**: Soma, AND, OR, NOT.
-* **Entradas**: Dois operandos de 8 bits e código da operação.
+* **Entradas**: Dois operandos de 8 bits e código da operação (x, y).
 * **Saídas**: Resultado de 8 bits e flags de carry|overflow|zero|negativo.
 
 ### Multiplicador
