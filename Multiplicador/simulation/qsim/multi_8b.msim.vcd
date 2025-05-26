@@ -3,7 +3,7 @@ $comment
 		vcd file multi_8b.msim.vcd -direction
 $end
 $date
-	Mon May 26 14:03:16 2025
+	Sat May 24 15:36:04 2025
 $end
 $version
 	ModelSim Version 2020.1

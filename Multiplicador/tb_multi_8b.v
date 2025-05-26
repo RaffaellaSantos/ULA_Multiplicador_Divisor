@@ -7,6 +7,7 @@ module tb_multi_8b;
   wire [15:0] produto;
   wire fim;
 
+  // Instancia o módulo
   multi_8b uut (
     .clk(clk),
     .rst(rst),
@@ -17,75 +18,51 @@ module tb_multi_8b;
     .fim(fim)
   );
 
-  // Clock de 10 ns
+  // Clock 10ns
   always #5 clk = ~clk;
 
   initial begin
+    // Inicialização
     clk = 0;
     rst = 1;
     inicio = 0;
     multiplicando = 0;
     multiplicador = 0;
-    #20;
+    #10;
     rst = 0;
 
-    // === Teste 1 ===
+    // Teste 1: 25 x 12
     multiplicando = 16'd25;
     multiplicador = 8'd12;
-    @(negedge clk); inicio = 1;
-    @(negedge clk); inicio = 0;
+    inicio = 1;
+    #10;
+    inicio = 0;
+    wait (fim == 1);
+    #10;
+    $display("Teste 1: 25 x 12 = %d", produto);
+    if (produto !== 16'd300)
+      $display("Erro: Esperado 300");
+    else
+      $display("Sucesso!");
 
-    // Espera fim com timeout
-    repeat (100) @(posedge clk);
-    if (fim) begin
-      $display("Teste 1: 25 x 12 = %d", produto);
-      if (produto !== 16'd300)
-        $display("Erro: Esperado 300");
-      else
-        $display("Sucesso!");
-    end else begin
-      $display("Erro: timeout no Teste 1");
-    end
+    // Reset entre testes
+    rst = 1;
+    #10;
+    rst = 0;
 
-    // Reset
-    rst = 1; @(negedge clk); rst = 0;
-
-    // === Teste 2 ===
+    // Teste 2: 10 x 12
     multiplicando = 16'd10;
     multiplicador = 8'd12;
-    @(negedge clk); inicio = 1;
-    @(negedge clk); inicio = 0;
-
-    repeat (100) @(posedge clk);
-    if (fim) begin
-      $display("Teste 2: 10 x 12 = %d", produto);
-      if (produto !== 16'd120)
-        $display("Erro: Esperado 120");
-      else
-        $display("Sucesso!");
-    end else begin
-      $display("Erro: timeout no Teste 2");
-    end
-	 
-	 // Reset
-    rst = 1; @(negedge clk); rst = 0;
-
-    // === Teste 3 ===
-    multiplicando = 16'd2;
-    multiplicador = 8'd3;
-    @(negedge clk); inicio = 1;
-    @(negedge clk); inicio = 0;
-
-    repeat (100) @(posedge clk);
-    if (fim) begin
-      $display("Teste 2: 2 x 3 = %d", produto);
-      if (produto !== 16'd6)
-        $display("Erro: Esperado 6");
-      else
-        $display("Sucesso!");
-    end else begin
-      $display("Erro: timeout no Teste 3");
-    end
+    inicio = 1;
+    #10;
+    inicio = 0;
+    wait (fim == 1);
+    #10;
+    $display("Teste 2: 10 x 12 = %d", produto);
+    if (produto !== 16'd120)
+      $display("Erro: Esperado 120");
+    else
+      $display("Sucesso!");
 
     #20;
     $finish;

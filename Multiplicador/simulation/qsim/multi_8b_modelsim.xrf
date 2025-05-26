@@ -1,8 +1,10 @@
 vendor_name = ModelSim
-source_file = 1, /home/raffaellasf/Documentos/Quartus/Multiplicador/multi_8b.v
-source_file = 1, /home/raffaellasf/Documentos/Quartus/Multiplicador/Waveform.vwf
-source_file = 1, /home/raffaellasf/Documentos/Quartus/Multiplicador/tb_multi_8b.v
-source_file = 1, /home/raffaellasf/Documentos/Quartus/Multiplicador/db/multi_8b.cbx.xml
+source_file = 1, /home/raffaellasf/Documentos/Git/ULA_Multiplicador_Divisor/ULA_Multiplicador_Divisor/Multiplicador/multi_8b.v
+source_file = 1, /home/raffaellasf/Documentos/Git/ULA_Multiplicador_Divisor/ULA_Multiplicador_Divisor/Multiplicador/Waveform.vwf
+source_file = 1, /home/raffaellasf/Documentos/Git/ULA_Multiplicador_Divisor/ULA_Multiplicador_Divisor/Multiplicador/tb_multi_8b.v
+source_file = 1, /home/raffaellasf/Documentos/Git/ULA_Multiplicador_Divisor/ULA_Multiplicador_Divisor/Multiplicador/mux8x1_16b.v
+source_file = 1, /home/raffaellasf/Documentos/Git/ULA_Multiplicador_Divisor/ULA_Multiplicador_Divisor/Multiplicador/mux8x1_8b.v
+source_file = 1, /home/raffaellasf/Documentos/Git/ULA_Multiplicador_Divisor/ULA_Multiplicador_Divisor/Multiplicador/db/multi_8b.cbx.xml
 design_name = multi_8b
 instance = comp, \produto[0]~output , produto[0]~output, multi_8b, 1
 instance = comp, \produto[1]~output , produto[1]~output, multi_8b, 1

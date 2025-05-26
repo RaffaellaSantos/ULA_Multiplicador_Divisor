@@ -8,99 +8,51 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 d/home/raffaellasf/Documentos/Git/ULA_Multiplicador_Divisor/ULA_Multiplicador_Divisor/Multiplicador/simulation/modelsim
+Z0 d/home/raffaellasf/Documentos/Quartus/Multiplicador/simulation/modelsim
 vmulti_8b
-Z1 !s110 1748283866
+Z1 !s110 1748115187
 !i10b 1
-!s100 4bdM_U69>TeKVh_ddkd?H0
+!s100 jSZiXzaWU3=h0;cnWV[ZB2
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IAEl?7H1N^nn<LdO^]<n8W3
+I_FA3C2:BYb<?IiRm54[PR0
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1748282996
-8/home/raffaellasf/Documentos/Git/ULA_Multiplicador_Divisor/ULA_Multiplicador_Divisor/Multiplicador/multi_8b.v
-F/home/raffaellasf/Documentos/Git/ULA_Multiplicador_Divisor/ULA_Multiplicador_Divisor/Multiplicador/multi_8b.v
+w1748112680
+8/home/raffaellasf/Documentos/Quartus/Multiplicador/multi_8b.v
+F/home/raffaellasf/Documentos/Quartus/Multiplicador/multi_8b.v
 !i122 0
-L0 1 46
+L0 4 39
 Z4 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z5 !s108 1748283866.000000
-!s107 /home/raffaellasf/Documentos/Git/ULA_Multiplicador_Divisor/ULA_Multiplicador_Divisor/Multiplicador/multi_8b.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/raffaellasf/Documentos/Git/ULA_Multiplicador_Divisor/ULA_Multiplicador_Divisor/Multiplicador|/home/raffaellasf/Documentos/Git/ULA_Multiplicador_Divisor/ULA_Multiplicador_Divisor/Multiplicador/multi_8b.v|
+Z5 !s108 1748115187.000000
+!s107 /home/raffaellasf/Documentos/Quartus/Multiplicador/multi_8b.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/raffaellasf/Documentos/Quartus/Multiplicador|/home/raffaellasf/Documentos/Quartus/Multiplicador/multi_8b.v|
 !i113 1
 Z6 o-vlog01compat -work work
-Z7 !s92 -vlog01compat -work work +incdir+/home/raffaellasf/Documentos/Git/ULA_Multiplicador_Divisor/ULA_Multiplicador_Divisor/Multiplicador
+Z7 !s92 -vlog01compat -work work +incdir+/home/raffaellasf/Documentos/Quartus/Multiplicador
 Z8 tCvgOpt 0
-vmux8x1_16b
-R1
-!i10b 1
-!s100 ;13dfFJPL1RcnE[lW11<23
-R2
-I]Y<m5d`nMORnecMAP6Q660
-R3
-R0
-w1748282233
-8/home/raffaellasf/Documentos/Git/ULA_Multiplicador_Divisor/ULA_Multiplicador_Divisor/Multiplicador/mux8x1_16b.v
-F/home/raffaellasf/Documentos/Git/ULA_Multiplicador_Divisor/ULA_Multiplicador_Divisor/Multiplicador/mux8x1_16b.v
-!i122 1
-Z9 L0 1 21
-R4
-r1
-!s85 0
-31
-R5
-!s107 /home/raffaellasf/Documentos/Git/ULA_Multiplicador_Divisor/ULA_Multiplicador_Divisor/Multiplicador/mux8x1_16b.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/raffaellasf/Documentos/Git/ULA_Multiplicador_Divisor/ULA_Multiplicador_Divisor/Multiplicador|/home/raffaellasf/Documentos/Git/ULA_Multiplicador_Divisor/ULA_Multiplicador_Divisor/Multiplicador/mux8x1_16b.v|
-!i113 1
-R6
-R7
-R8
-vmux8x1_8b
-R1
-!i10b 1
-!s100 NYkZV`Z@73j^ZlKQ64hEY1
-R2
-I^mig?eH;9`QB?zeN19Mfz1
-R3
-R0
-w1748282415
-8/home/raffaellasf/Documentos/Git/ULA_Multiplicador_Divisor/ULA_Multiplicador_Divisor/Multiplicador/mux8x1_8b.v
-F/home/raffaellasf/Documentos/Git/ULA_Multiplicador_Divisor/ULA_Multiplicador_Divisor/Multiplicador/mux8x1_8b.v
-!i122 2
-R9
-R4
-r1
-!s85 0
-31
-R5
-!s107 /home/raffaellasf/Documentos/Git/ULA_Multiplicador_Divisor/ULA_Multiplicador_Divisor/Multiplicador/mux8x1_8b.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/raffaellasf/Documentos/Git/ULA_Multiplicador_Divisor/ULA_Multiplicador_Divisor/Multiplicador|/home/raffaellasf/Documentos/Git/ULA_Multiplicador_Divisor/ULA_Multiplicador_Divisor/Multiplicador/mux8x1_8b.v|
-!i113 1
-R6
-R7
-R8
 vtb_multi_8b
 R1
 !i10b 1
-!s100 49z1;3@h_2KggiA<>61Kg0
+!s100 ?m1GHEb2UgRI@2YGa4gO01
 R2
-IHQ;jY6K;8A]Zdig6259eH2
+IGN`bCfRhk5M<g8ChW`UZz3
 R3
 R0
-w1748283832
-8/home/raffaellasf/Documentos/Git/ULA_Multiplicador_Divisor/ULA_Multiplicador_Divisor/Multiplicador/tb_multi_8b.v
-F/home/raffaellasf/Documentos/Git/ULA_Multiplicador_Divisor/ULA_Multiplicador_Divisor/Multiplicador/tb_multi_8b.v
-!i122 3
-L0 1 93
+w1748114913
+8/home/raffaellasf/Documentos/Quartus/Multiplicador/tb_multi_8b.v
+F/home/raffaellasf/Documentos/Quartus/Multiplicador/tb_multi_8b.v
+!i122 1
+L0 1 70
 R4
 r1
 !s85 0
 31
 R5
-!s107 /home/raffaellasf/Documentos/Git/ULA_Multiplicador_Divisor/ULA_Multiplicador_Divisor/Multiplicador/tb_multi_8b.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/raffaellasf/Documentos/Git/ULA_Multiplicador_Divisor/ULA_Multiplicador_Divisor/Multiplicador|/home/raffaellasf/Documentos/Git/ULA_Multiplicador_Divisor/ULA_Multiplicador_Divisor/Multiplicador/tb_multi_8b.v|
+!s107 /home/raffaellasf/Documentos/Quartus/Multiplicador/tb_multi_8b.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/raffaellasf/Documentos/Quartus/Multiplicador|/home/raffaellasf/Documentos/Quartus/Multiplicador/tb_multi_8b.v|
 !i113 1
 R6
 R7
