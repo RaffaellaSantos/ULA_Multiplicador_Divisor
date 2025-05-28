@@ -1,0 +1,59 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/raffaellasf/Documentos/Git/ULA_Multiplicador_Divisor/ULA_8bits/simulation/qsim
+vULA_8b
+Z1 !s110 1748450316
+!i10b 1
+!s100 1k53Pol_KFLiFOMS6`kQC3
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I^0Bdo[[8JUCoddX3E5k>73
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1748450316
+8ULA_8b.vo
+FULA_8b.vo
+!i122 0
+L0 32 1164
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1748450316.000000
+!s107 ULA_8b.vo|
+!s90 -work|work|ULA_8b.vo|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+n@u@l@a_8b
+vULA_8b_vlg_vec_tst
+R1
+!i10b 1
+!s100 eW43i[SbWA=XdJFWN:RAI1
+R2
+I8XW@m7LE6NVz1FThn;nAE0
+R3
+R0
+w1748450315
+8Test1.vwf.vt
+FTest1.vwf.vt
+!i122 1
+L0 30 118
+R4
+r1
+!s85 0
+31
+R5
+!s107 Test1.vwf.vt|
+!s90 -work|work|Test1.vwf.vt|
+!i113 1
+R6
+R7
+n@u@l@a_8b_vlg_vec_tst

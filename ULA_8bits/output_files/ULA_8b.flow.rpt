@@ -1,5 +1,5 @@
 Flow report for ULA_8b
-Sun May 25 18:08:18 2025
+Wed May 28 12:38:36 2025
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Sun May 25 18:08:18 2025       ;
+; Flow Status                     ; Successful - Wed May 28 12:38:36 2025       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; ULA_8b                                      ;
 ; Top-level Entity Name           ; ULA_8b                                      ;
@@ -114,7 +114,9 @@ https://fpgasoftware.intel.com/eula.
 ; Assembler            ; 00:00:04     ; 1.0                     ; 511 MB              ; 00:00:04                           ;
 ; Timing Analyzer      ; 00:00:03     ; 1.1                     ; 1028 MB             ; 00:00:03                           ;
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 687 MB              ; 00:00:00                           ;
-; Total                ; 00:00:23     ; --                      ; --                  ; 00:00:54                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 684 MB              ; 00:00:00                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 688 MB              ; 00:00:00                           ;
+; Total                ; 00:00:24     ; --                      ; --                  ; 00:00:54                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -128,6 +130,8 @@ https://fpgasoftware.intel.com/eula.
 ; Assembler            ; pop-os           ; Pop!_OS 22.04 ; 22         ; x86_64         ;
 ; Timing Analyzer      ; pop-os           ; Pop!_OS 22.04 ; 22         ; x86_64         ;
 ; EDA Netlist Writer   ; pop-os           ; Pop!_OS 22.04 ; 22         ; x86_64         ;
+; EDA Netlist Writer   ; pop-os           ; Pop!_OS 22.04 ; 22         ; x86_64         ;
+; EDA Netlist Writer   ; pop-os           ; Pop!_OS 22.04 ; 22         ; x86_64         ;
 +----------------------+------------------+---------------+------------+----------------+
 
 
@@ -139,6 +143,8 @@ quartus_fit --read_settings_files=off --write_settings_files=off ULA_8b -c ULA_8
 quartus_asm --read_settings_files=off --write_settings_files=off ULA_8b -c ULA_8b
 quartus_sta ULA_8b -c ULA_8b
 quartus_eda --read_settings_files=off --write_settings_files=off ULA_8b -c ULA_8b
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off ULA_8b -c ULA_8b --vector_source=/home/raffaellasf/Documentos/Git/ULA_Multiplicador_Divisor/ULA_8bits/Test1.vwf --testbench_file=/home/raffaellasf/Documentos/Git/ULA_Multiplicador_Divisor/ULA_8bits/simulation/qsim/Test1.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=/home/raffaellasf/Documentos/Git/ULA_Multiplicador_Divisor/ULA_8bits/simulation/qsim/ ULA_8b -c ULA_8b
 
 
 
