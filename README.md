@@ -47,7 +47,7 @@ ULA_Multiplicador_Divisor/
 > *Se tiver curiosidade, a branch multiplicador_ula possui um multiplicador sem a implementação de uma ULA.*
 
 ### Divisor
-* O divisor foi implementada de forma "crua", contendo apenas o próprio divisor. Para mais informações acesse o arquivo **[Divisor_8bits.pdf](https://github.com/RaffaellaSantos/ULA_Multiplicador_Divisor/blob/main/Divisor/Divisor_8bits.pdf)**.
+* O divisor foi implementado de forma "crua", contendo apenas o próprio divisor. Para mais informações acesse o arquivo **[Divisor_8bits.pdf](https://github.com/RaffaellaSantos/ULA_Multiplicador_Divisor/blob/main/Divisor/Divisor_8bits.pdf)**.
 
 * **Operação**: Divisão de dois operandos de 8 bits.
 * **Saídas**: Quociente (8bits) e resto(16bits).
