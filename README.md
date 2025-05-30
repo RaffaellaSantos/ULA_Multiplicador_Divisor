@@ -65,4 +65,4 @@ Para simular foi utilizado o ModelSim com o Quartus Lite 20.1:
 1. Abra o arquivo .qpf no Quartus.
 2. Vá em *Assignments* --> *Settings* --> *Simulation* --> *Compile test bench* --> Escolha o arquivo de teste.
 3. Compile o módulo e seu testbench.
-4. Execute a simulação no ModelSim clicando em *Run --> Run Simulation Tool --> RRL Simulation*
+4. Execute a simulação no ModelSim clicando em *Run --> Run Simulation Tool --> RTL Simulation*
