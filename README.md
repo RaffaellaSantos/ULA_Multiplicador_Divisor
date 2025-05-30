@@ -31,7 +31,7 @@ ULA_Multiplicador_Divisor/
 
 ### ULA (Unidade Lógica e Aritmética)
 
-* A ULA implementada neste projeto é básica e só realiza quatro operações. Para mais informações acesse o arquivo *Unidade_Lógico_Aritmética.pdf*.
+* A ULA implementada neste projeto é básica e só realiza quatro operações. Para mais informações acesse o arquivo **[Unidade_Lógico_Aritmética.pdf](https://github.com/RaffaellaSantos/ULA_Multiplicador_Divisor/blob/main/ULA_8bits/Unidade_Lógico_Aritmética.pdf)**.
 
 * **Operações**: Soma, AND, OR, NOT.
 * **Entradas**: Dois operandos de 8 bits e código da operação (x, y).
@@ -39,7 +39,7 @@ ULA_Multiplicador_Divisor/
 
 ### Multiplicador
 
-* O multiplicador foi implementado com uma ULA completa, mas em abordagem comportamental. Para mais informações acesse o arquivo *Multiplicador_8bits.pdf*.
+* O multiplicador foi implementado com uma ULA completa, mas em abordagem comportamental. Para mais informações acesse o arquivo **[Multiplicador_8bits.pdf](https://github.com/RaffaellaSantos/ULA_Multiplicador_Divisor/blob/main/Multiplicador/Multiplicador_8bits.pdf)**.
 
 * **Operação**: Multiplicação de dois operandos de 8 bits.
 * **Saída**: Resultado de 16 bits.
@@ -47,7 +47,7 @@ ULA_Multiplicador_Divisor/
 > *Se tiver curiosidade, a branch multiplicador_ula possui um multiplicador sem a implementação de uma ULA.*
 
 ### Divisor
-* Para mais informações acesse o arquivo *Divisor_8bits.pdf*.
+* O divisor foi implementada de forma "crua", contendo apenas o próprio divisor. Para mais informações acesse o arquivo **[Divisor_8bits.pdf](https://github.com/RaffaellaSantos/ULA_Multiplicador_Divisor/blob/main/Divisor/Divisor_8bits.pdf)**.
 
 * **Operação**: Divisão de dois operandos de 8 bits.
 * **Saídas**: Quociente (8bits) e resto(16bits).
@@ -60,8 +60,9 @@ Cada módulo possui um testbench correspondente:
 * `tb_multi_8b.v.v`
 * `tb_div_8b.v`
 
-Para simular:
+Para simular foi utilizado o ModelSim com o Quartus Lite 20.1:
 
-1. Utilize uma ferramenta de simulação compatível com Verilog, como ModelSim ou Icarus Verilog. Neste projeto foi utilizado o ModelSim com o Quartus Lite 20.1.
-2. Compile o módulo e seu testbench.
-3. Execute a simulação.
+1. Abra o arquivo .qpf no Quartus.
+2. Vá em *Assignments* --> *Settings* --> *Simulation* --> *Compile test bench* --> Escolha o arquivo de teste.
+3. Compile o módulo e seu testbench.
+4. Execute a simulação no ModelSim clicando em *Run --> Run Simulation Tool --> RRL Simulation*
